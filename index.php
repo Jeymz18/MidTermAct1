@@ -1,12 +1,12 @@
 <?php
-echo "<h2>Activity 1: GadgetGrove Product Catalog</h2>";
+echo "<h1>Activity 1: Product catalog for GadgetGrove</h1>";
 
 /* ---------------------------
    Indexed Array
 --------------------------- */
 $products = ["Laptop", "Smartphone", "Tablet", "Smartwatch"];
 
-echo "<h3>Indexed Array</h3>";
+echo "<h2>Aa</h2>";
 foreach ($products as $product) {
     echo "- $product <br>";
 }
