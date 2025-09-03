@@ -1,7 +1,7 @@
 <?php
 echo "<h1>Activity 1: Product catalog for GadgetGrove</h1>";
 
-$products = ["<h3>Laptop</h3>"];
+$products = ["<h3>Product: Laptop, Smartphone, Tablet, Smartwatch, Monitor, System Unit</h3>"];
 
 echo "<h2>Here's our Available Gadgets</h2>";
 foreach ($products as $product) {
@@ -9,20 +9,25 @@ foreach ($products as $product) {
 }
 echo "<hr>";
 
+$productPrices = [18500, 20500, 42000, 34500];
+echo "First product price: ₱" . $productPrices[0] . "<br>";
+echo "Last product price: ₱" . $productPrices[3] . "<br>";
+echo "<hr>";
+
+
 $laptop = [
     "name" => "Acer Aspire 5 (A515-56-36UT)",
     "price" => 18500,
     "specs" => "<br>•Intel Core i3 11th Gen<br>•8GB RAM - 256GB SSD<br>•15.6 FHD Display<br>•Windows 11",
     "stock" => 16
 ];
-echo "<h2>Price List</h2>";
 echo "Product: " . $laptop["name"] . "<br>";
 echo "Price: ₱" . $laptop["price"] . "<br>";
 echo "Specs: " . $laptop["specs"] . "<br>";
 echo "Stock: " . $laptop["stock"] . " units<br><br>";
+echo "<hr>";
 
-
-
+echo "<h2>Full Catalog</h2>";
 $laptop = [
     "name" => "Lenovo IdeaPad 3 (14ITL6)",
     "price" => 20500,
