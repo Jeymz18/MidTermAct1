@@ -1,53 +1,63 @@
 <?php
 echo "<h1>Activity 1: Product catalog for GadgetGrove</h1>";
 
-/* ---------------------------
-   Indexed Array
---------------------------- */
-$products = ["Laptop", "Smartphone", "Tablet", "Smartwatch"];
+$products = ["<h3>Laptop</h3>"];
 
-echo "<h2>Aa</h2>";
+echo "<h2>Here's our Available Gadgets</h2>";
 foreach ($products as $product) {
-    echo "- $product <br>";
+    echo "$product";
 }
-
 echo "<hr>";
 
-/* ---------------------------
-   Associative Array
---------------------------- */
 $laptop = [
-    "name" => "Laptop",
-    "price" => 45000,
-    "stock" => 12
+    "name" => "Acer Aspire 5 (A515-56-36UT)",
+    "price" => 18500,
+    "specs" => "<br>•Intel Core i3 11th Gen<br>•8GB RAM - 256GB SSD<br>•15.6 FHD Display<br>•Windows 11",
+    "stock" => 16
 ];
-
-echo "<h3>Associative Array</h3>";
+echo "<h2>Price List</h2>";
 echo "Product: " . $laptop["name"] . "<br>";
 echo "Price: ₱" . $laptop["price"] . "<br>";
-echo "Stock: " . $laptop["stock"] . " units<br>";
+echo "Specs: " . $laptop["specs"] . "<br>";
+echo "Stock: " . $laptop["stock"] . " units<br><br>";
 
-echo "<hr>";
 
-/* ---------------------------
-   Multidimensional Array
---------------------------- */
-$catalog = [
-    "Computers" => [
-        ["name" => "Laptop", "price" => 45000],
-        ["name" => "Desktop", "price" => 30000]
-    ],
-    "Mobiles" => [
-        ["name" => "Smartphone", "price" => 25000],
-        ["name" => "Tablet", "price" => 15000]
-    ]
+
+$laptop = [
+    "name" => "Lenovo IdeaPad 3 (14ITL6)",
+    "price" => 20500,
+    "specs" => "<br>•Intel Core i3 11th Gen<br>•8GB RAM - 256GB SSD<br>•14 FHD Display<br>•Windows 11",
+    "stock" => 6
 ];
+echo "Product: " . $laptop["name"] . "<br>";
+echo "Price: ₱" . $laptop["price"] . "<br>";
+echo "Specs: " . $laptop["specs"] . "<br>";
+echo "Stock: " . $laptop["stock"] . " units<br><br>";
 
-echo "<h3>Multidimensional Array</h3>";
-foreach ($catalog as $category => $items) {
-    echo "<b>$category:</b><br>";
-    foreach ($items as $item) {
-        echo "- " . $item["name"] . " (₱" . $item["price"] . ")<br>";
-    }
-}
+
+
+$laptop = [
+    "name" => "Apple MacBook Air (M1, 2020)",
+    "price" => 42000,
+    "specs" => "<br>•Apple M1 Chip<br>•8GB Unified RAM - 256GB SSD<br>•13.3 Retina Display<br>•macOS",
+    "stock" => 12
+];
+echo "Product: " . $laptop["name"] . "<br>";
+echo "Price: ₱" . $laptop["price"] . "<br>";
+echo "Specs: " . $laptop["specs"] . "<br>";
+echo "Stock: " . $laptop["stock"] . " units<br><br>";
+
+
+
+$laptop = [
+    "name" => "MSI GF63 Thin (11SC)",
+    "price" => 34500,
+    "specs" => "<br>•Intel Core i5 11th Gen<br>•8GB RAM - 512GB SSD<br>•NVIDIA GTX 1650<br>•15.6 FHD 144Hz Display",
+    "stock" => 5
+];
+echo "Product: " . $laptop["name"] . "<br>";
+echo "Price: ₱" . $laptop["price"] . "<br>";
+echo "Specs: " . $laptop["specs"] . "<br>";
+echo "Stock: " . $laptop["stock"] . " units<br>";
+echo "<hr>";
 ?>
